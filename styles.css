@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+.main-nav {
+  background-color: #036937;
+  padding: 25px;
+  border-top: 5px solid #F0A904;
+  border-bottom: 5px solid #F0A904;
+}
+.main-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=styles.css.map */

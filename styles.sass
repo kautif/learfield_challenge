@@ -1,0 +1,32 @@
+$nav-green: #036937
+$color-white: #FFF
+$border-yellow: 5px solid #F0A904
+
+$nav-font-desktop: 1.5em
+
+$margin-none: 0
+$font-roboto: 'Roboto', sans-serif
+
+body 
+    margin: $margin-none
+
+ul
+    margin: $margin-none
+
+.main-nav
+    background-color: $nav-green
+    padding: 25px
+    border-top: $border-yellow
+    border-bottom: $border-yellow
+
+    ul
+        display: flex
+        justify-content: space-around
+    
+        li
+            list-style: none
+            font-family: $font-roboto
+            text-transform: uppercase
+            font-weight: 900
+            font-size: $nav-font-desktop
+            color: $color-white
