@@ -31,8 +31,13 @@ ul {
   background-color: #F0A904;
 }
 
+.main-nav-item-selected {
+  color: #036937 !important;
+  background-color: #F0A904;
+}
+
 .teams-dropdown {
-  display: flex;
+  display: none;
   justify-content: space-between;
   background-color: #F2F2F2;
   padding-top: 3%;
@@ -58,6 +63,11 @@ ul {
 }
 .teams-dropdown .teams-dropdown-item {
   width: 50%;
+}
+
+.teams-dropdown-show {
+  margin-top: -5px;
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */
