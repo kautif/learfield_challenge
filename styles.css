@@ -8,21 +8,56 @@ ul {
 
 .main-nav {
   background-color: #036937;
-  padding: 25px;
+  /* padding: 25px */
   border-top: 5px solid #F0A904;
   border-bottom: 5px solid #F0A904;
 }
 .main-nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .main-nav ul li {
+  padding: 2% 4%;
   list-style: none;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.5em;
   color: #FFF;
+}
+.main-nav ul li:hover {
+  color: #036937;
+  background-color: #F0A904;
+}
+
+.teams-dropdown {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+.teams-dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+.teams-dropdown ul li {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 2%;
+}
+.teams-dropdown h2 {
+  margin: 0;
+  color: #036937;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.teams-dropdown .teams-dropdown-item {
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

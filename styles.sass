@@ -1,32 +1,71 @@
-$nav-green: #036937
 $color-white: #FFF
-$border-yellow: 5px solid #F0A904
+$color-yellow: #F0A904 
+$color-green: #036937
+$color-grey: #F2F2F2
+$color-grey-dark: #666666
+
+$nav-green: $color-green
+$nav-item-padding: 2% 4%
+$border-yellow: 5px solid $color-yellow 
 
 $nav-font-desktop: 1.5em
 
-$margin-none: 0
 $font-roboto: 'Roboto', sans-serif
 
 body 
-    margin: $margin-none
+    margin: 0
 
 ul
-    margin: $margin-none
+    margin: 0
 
 .main-nav
     background-color: $nav-green
-    padding: 25px
+    /* padding: 25px */
     border-top: $border-yellow
     border-bottom: $border-yellow
 
     ul
         display: flex
         justify-content: space-around
+        align-items: center
     
         li
+            padding: $nav-item-padding
             list-style: none
             font-family: $font-roboto
             text-transform: uppercase
             font-weight: 900
             font-size: $nav-font-desktop
             color: $color-white
+
+        li:hover
+            color: $color-green
+            background-color: $color-yellow
+
+.teams-dropdown 
+    display: flex
+    justify-content: space-between
+    background-color: $color-grey
+    padding-top: 3%
+    padding-bottom: 2%
+
+    ul
+        display: flex
+        flex-direction: column
+
+        li
+            color: $color-grey-dark
+            font-family: $font-roboto
+            list-style: none
+            text-transform: uppercase
+            font-weight: 900
+            margin-bottom: 2%
+
+    h2
+        margin: 0
+        color: $color-green
+        font-family: $font-roboto
+        text-transform: uppercase
+
+    .teams-dropdown-item
+        width: 50%
