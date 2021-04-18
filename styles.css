@@ -1,4 +1,5 @@
 body {
+  height: 100vh;
   margin: 0;
 }
 
@@ -26,7 +27,7 @@ ul {
   font-size: 1.5em;
   color: #FFF;
 }
-.main-nav ul li:hover {
+.main-nav ul .main-nav-item:hover {
   color: #036937;
   background-color: #F0A904;
 }
@@ -68,6 +69,58 @@ ul {
 .teams-dropdown-show {
   margin-top: -5px;
   display: flex;
+}
+
+.mobile-nav-icon,
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .main-nav-item {
+    display: none;
+  }
+
+  .main-nav ul {
+    justify-content: flex-end;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+    border-left: 1px solid #045F32;
+  }
+  .mobile-nav-icon .fa-times {
+    display: none;
+  }
+
+  .mobile-nav-container {
+    display: none;
+    background-color: #036937;
+    width: 45%;
+    margin-left: auto;
+  }
+  .mobile-nav-container .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .mobile-nav-container .mobile-nav li {
+    padding-left: 9%;
+  }
+
+  .mobile-nav-show {
+    display: flex !important;
+  }
+
+  .mobile-nav-item {
+    color: #FFF;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 2% 0 2.5% 0;
+    border-bottom: 1px solid #045F32;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
