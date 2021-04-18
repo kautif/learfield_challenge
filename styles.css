@@ -78,7 +78,8 @@ ul {
   }
 
   .fa-chevron-up,
-.main-nav__item {
+.main-nav__item,
+.mobile-nav__teams {
     display: none;
   }
 
@@ -111,10 +112,6 @@ ul {
 
   .mobile-nav--show {
     display: flex !important;
-  }
-
-  .mobile-nav__teams {
-    display: none;
   }
 
   .mobile-nav__item {
