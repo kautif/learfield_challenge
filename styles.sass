@@ -21,7 +21,6 @@ ul
 
 .main-nav
     background-color: $nav-green
-    /* padding: 25px */
     border-top: $border-yellow
     border-bottom: $border-yellow
 
@@ -39,11 +38,11 @@ ul
             font-size: $nav-font-desktop
             color: $color-white
 
-        .main-nav-item:hover
+        .main-nav__item:hover
             color: $color-green
             background-color: $color-yellow
 
-.main-nav-item-selected 
+.main-nav-item--selected 
     color: $color-green !important
     background-color: $color-yellow
 
@@ -72,10 +71,10 @@ ul
         font-family: $font-roboto
         text-transform: uppercase
 
-    .teams-dropdown-item
+    .teams-dropdown__item
         width: 50%
 
-.teams-dropdown-show
+.teams-dropdown--show
     margin-top: -5px
     display: flex
 
@@ -89,7 +88,7 @@ ul
         margin: 0
 
     .fa-chevron-up,      
-    .main-nav-item
+    .main-nav__item
         display: none
 
     .main-nav 
@@ -117,13 +116,13 @@ ul
             li
                 padding-left: 9%
 
-    .mobile-nav-show
+    .mobile-nav--show
         display: flex !important
     
-    .mobile-nav-teams 
+    .mobile-nav__teams 
         display: none
 
-    .mobile-nav-item
+    .mobile-nav__item
         color: $color-white
         list-style: none
         font-family: $font-roboto
@@ -132,17 +131,17 @@ ul
         padding: $mobile-nav-item-padding
         border-bottom: $mobile-nav-border
 
-    .mobile-nav-subitem-head 
+    .mobile-nav__teams__subitem--head
+        text-transform: uppercase 
         font-weight: 900
         color: $color-yellow !important
         font-style: italic
 
-    .mobile-nav-subitem
+    .mobile-nav__teams__subitem
         list-style: none
         font-family: $font-roboto
         color: $color-white
         padding-left: 6% !important
-        text-transform: uppercase
         margin: 0
         padding: $mobile-nav-item-padding
         border-bottom: $mobile-nav-border

@@ -5,7 +5,6 @@ ul {
 
 .main-nav {
   background-color: #036937;
-  /* padding: 25px */
   border-top: 5px solid #F0A904;
   border-bottom: 5px solid #F0A904;
 }
@@ -23,12 +22,12 @@ ul {
   font-size: 1.5em;
   color: #FFF;
 }
-.main-nav ul .main-nav-item:hover {
+.main-nav ul .main-nav__item:hover {
   color: #036937;
   background-color: #F0A904;
 }
 
-.main-nav-item-selected {
+.main-nav-item--selected {
   color: #036937 !important;
   background-color: #F0A904;
 }
@@ -58,11 +57,11 @@ ul {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-.teams-dropdown .teams-dropdown-item {
+.teams-dropdown .teams-dropdown__item {
   width: 50%;
 }
 
-.teams-dropdown-show {
+.teams-dropdown--show {
   margin-top: -5px;
   display: flex;
 }
@@ -79,7 +78,7 @@ ul {
   }
 
   .fa-chevron-up,
-.main-nav-item {
+.main-nav__item {
     display: none;
   }
 
@@ -110,15 +109,15 @@ ul {
     padding-left: 9%;
   }
 
-  .mobile-nav-show {
+  .mobile-nav--show {
     display: flex !important;
   }
 
-  .mobile-nav-teams {
+  .mobile-nav__teams {
     display: none;
   }
 
-  .mobile-nav-item {
+  .mobile-nav__item {
     color: #FFF;
     list-style: none;
     font-family: "Roboto", sans-serif;
@@ -128,18 +127,18 @@ ul {
     border-bottom: 1px solid #045F32;
   }
 
-  .mobile-nav-subitem-head {
+  .mobile-nav__teams__subitem--head {
+    text-transform: uppercase;
     font-weight: 900;
     color: #F0A904 !important;
     font-style: italic;
   }
 
-  .mobile-nav-subitem {
+  .mobile-nav__teams__subitem {
     list-style: none;
     font-family: "Roboto", sans-serif;
     color: #FFF;
     padding-left: 6% !important;
-    text-transform: uppercase;
     margin: 0;
     padding: 2% 0 2.5% 0;
     border-bottom: 1px solid #045F32;
