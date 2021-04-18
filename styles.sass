@@ -1,11 +1,13 @@
 $color-white: #FFF
 $color-yellow: #F0A904 
 $color-green: #036937
+$color-green-dark: #02391E
 $color-grey: #F2F2F2
 $color-grey-dark: #666666
 
 $nav-green: $color-green
 $nav-item-padding: 2% 4%
+$mobile-nav-item-padding: 2% 0 2.5% 0 
 $border-yellow: 5px solid $color-yellow 
 $mobile-nav-border: 1px solid #045F32
 
@@ -13,10 +15,7 @@ $nav-font-desktop: 1.5em
 
 $font-roboto: 'Roboto', sans-serif
 
-body 
-    height: 100vh
-    margin: 0
-
+body,
 ul
     margin: 0
 
@@ -85,6 +84,11 @@ ul
     display: none
 
 @media (max-width: 1023px)
+    body 
+        height: 100vh
+        margin: 0
+
+    .fa-chevron-up,      
     .main-nav-item
         display: none
 
@@ -115,6 +119,9 @@ ul
 
     .mobile-nav-show
         display: flex !important
+    
+    .mobile-nav-teams 
+        display: none
 
     .mobile-nav-item
         color: $color-white
@@ -122,5 +129,26 @@ ul
         font-family: $font-roboto
         text-transform: uppercase
         font-weight: 900
-        padding: 2% 0 2.5% 0
+        padding: $mobile-nav-item-padding
         border-bottom: $mobile-nav-border
+
+    .mobile-nav-subitem-head 
+        font-weight: 900
+        color: $color-yellow !important
+        font-style: italic
+
+    .mobile-nav-subitem
+        list-style: none
+        font-family: $font-roboto
+        color: $color-white
+        padding-left: 6% !important
+        text-transform: uppercase
+        margin: 0
+        padding: $mobile-nav-item-padding
+        border-bottom: $mobile-nav-border
+        background-color: $color-green-dark
+
+    .fa-chevron-down,
+    .fa-chevron-up
+        float: right
+        margin: 1% 8% 0 0
