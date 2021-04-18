@@ -19,28 +19,7 @@ teamsDropdown.onmouseleave = function () {
 }
 
 $(document).ready(function () {
-    // let isMobileNavShowing = false;
-    // $('.mobile-nav-icon').on('click', function () {
-    //     if (!isMobileNavShowing) {
-    //         $('.mobile-nav-container').slideDown();
-    //         $('.fa-bars').fadeOut();
-    //         $('.fa-times').fadeIn();
-    //         isMobileNavShowing = true; 
-    //     }
-    // })
-
-    // $('.mobile-nav-icon').on('click', function () {
-    //     if (isMobileNavShowing) {
-    //         $('.fa-times').fadeOut();
-    //         $('.fa-bars').fadeIn();
-    //         $('.mobile-nav-container').slideUp();
-    //         isMobileNavShowing = false;
-    //     }
-    // })
-
     document.getElementsByClassName('mobile-nav-container')[0].style.height = $('body').height() - $('.main-nav').height() + 'px'; 
-
-    // console.log('body', $('body').height());
 
     $('.mobile-nav-icon').on('click', function() {
         $('.mobile-nav-container').slideToggle('slow');
