@@ -14,11 +14,11 @@ ul {
   align-items: center;
 }
 .main-nav ul li {
-  padding: 2% 4%;
   list-style: none;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+  padding: 2% 4%;
   font-size: 1.5em;
   color: #FFF;
 }
@@ -44,11 +44,11 @@ ul {
   flex-direction: column;
 }
 .teams-dropdown ul li {
-  color: #666666;
-  font-family: "Roboto", sans-serif;
   list-style: none;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+  color: #666666;
   margin-bottom: 2%;
 }
 .teams-dropdown h2 {
@@ -118,11 +118,11 @@ ul {
   }
 
   .mobile-nav__item {
-    color: #FFF;
     list-style: none;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 900;
+    color: #FFF;
     padding: 2% 0 2.5% 0;
     border-bottom: 1px solid #045F32;
   }

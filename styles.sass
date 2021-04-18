@@ -19,6 +19,12 @@ body,
 ul
     margin: 0
 
+@mixin list-font 
+    list-style: none
+    font-family: $font-roboto
+    text-transform: uppercase
+    font-weight: 900    
+
 .main-nav
     background-color: $nav-green
     border-top: $border-yellow
@@ -30,11 +36,9 @@ ul
         align-items: center
     
         li
+
+            @include list-font
             padding: $nav-item-padding
-            list-style: none
-            font-family: $font-roboto
-            text-transform: uppercase
-            font-weight: 900
             font-size: $nav-font-desktop
             color: $color-white
 
@@ -58,11 +62,8 @@ ul
         flex-direction: column
 
         li
+            @include list-font
             color: $color-grey-dark
-            font-family: $font-roboto
-            list-style: none
-            text-transform: uppercase
-            font-weight: 900
             margin-bottom: 2%
 
     h2
@@ -123,11 +124,8 @@ ul
         display: none
 
     .mobile-nav__item
+        @include list-font
         color: $color-white
-        list-style: none
-        font-family: $font-roboto
-        text-transform: uppercase
-        font-weight: 900
         padding: $mobile-nav-item-padding
         border-bottom: $mobile-nav-border
 
