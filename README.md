@@ -33,3 +33,10 @@ Opening mobile menu
 
 Opening Teams in mobile
 <img src="https://user-images.githubusercontent.com/22201101/115160935-0a947600-a058-11eb-98ab-bcf9b05b3988.png" alt="teams in mobile" />
+
+<h2>Issues</h2>
+<ol>
+    <li>Using the font style specified, but font style in the mockup looks a little compressed vertical-wise. When I use Roboto, it doesn't look compressed like in the mockup</li>
+    <li>In desktop, when mouse is hovered over Teams and then to the left of Teams, Teams dropdown will not disappear</li>
+    <li>In mobile, mathematically, the mobile menu is as long as it should be however, I don't think it's ideal that it's current height causes some scrolling to appear</li>
+</ol>
