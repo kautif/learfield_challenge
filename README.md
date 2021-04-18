@@ -40,3 +40,8 @@ Opening Teams in mobile
     <li>In desktop, when mouse is hovered over Teams and then to the left of Teams, Teams dropdown will not disappear</li>
     <li>In mobile, mathematically, the mobile menu is as long as it should be however, I don't think it's ideal that it's current height causes some scrolling to appear</li>
 </ol>
+
+<h2>Other Notes</h2>
+<p>I'm not classifying this as an issue because under normal usage, a user will not be switching from desktop to mobile or vice versa on the same device. If you test desktop and then switch to mobile view, the mobile menu will not extend to the bottom. But, if you refresh while in a view less than 1024px, it will extend to the bottom as expected.</p>
+<p>Likewise, if you were testing mobile, and then switched to desktop, it will show the Teams dropdown halfway down the page. If you refresh while in a desktop view, that will not be the case.</p>
+<p>Both of these behaviors are due to me setting the body to be 100vh, but only if a user has a screen size of less than 1024px. This is done to calculate the height that the mobile menu should be and then applying that height.</p>
