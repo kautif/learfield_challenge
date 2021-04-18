@@ -18,3 +18,18 @@
 <h2>Screenshots</h2>
 
 <h3>Desktop</h3>
+
+Initial state of navigation
+<img src="https://user-images.githubusercontent.com/22201101/115160751-2d725a80-a057-11eb-8004-7a628e804736.png" alt="initial navigation" />
+
+Hovering over Teams
+<img src="https://user-images.githubusercontent.com/22201101/115160780-5692eb00-a057-11eb-977b-64c61ceac257.png" alt="hovering over teams" />
+
+Initial state of mobile
+<img src="https://user-images.githubusercontent.com/22201101/115160841-935ee200-a057-11eb-80df-bd3b09cb0587.png" alt="initial mobile navigation" />
+
+Opening mobile menu
+<img src="https://user-images.githubusercontent.com/22201101/115160912-dd47c800-a057-11eb-93fd-72b5047160d5.png" alt="opening mobile menu" />
+
+Opening Teams in mobile
+<img src="https://user-images.githubusercontent.com/22201101/115160935-0a947600-a058-11eb-98ab-bcf9b05b3988.png" alt="teams in mobile" />
