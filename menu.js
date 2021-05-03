@@ -1,26 +1,34 @@
-let teams = document.getElementsByClassName('main-nav__item');
-let teamsDropdown = document.getElementsByClassName('teams-dropdown')[0];
-let mobileNavIcon = document.getElementsByClassName('mobile-nav-icon')[0];
-let mobileNav = document.getElementsByClassName('mobile-nav')[0];
+let teams = $('.main-nav__item');
+let teamsDropdown = $('.teams-dropdown')[0];
+let mobileNavIcon = $('.mobile-nav-icon')[0];
+let mobileNav = $('.mobile-nav')[0];
 
-teams[0].onmouseover = function () {
-    teams[0].classList.add('main-nav-item--selected');
-    document.getElementsByClassName('teams-dropdown')[0].classList.add('teams-dropdown--show');
-}
+$('#teams').mouseover(function () {
+    $('#teams').addClass('main-nav-item--selected');
+    $('.teams-dropdown').addClass('teams-dropdown--show');
+})
 
 function removeDropdown () {
-    teams[0].classList.remove('main-nav-item--selected');
-    teamsDropdown.classList.remove('teams-dropdown--show');
+    $('#teams').removeClass('main-nav-item--selected');
+    $('.teams-dropdown').removeClass('teams-dropdown--show');;
 }
 
 // Tickets
     //  If user hovers over Tickets, dropdown is removed
     //  If user hovers back into the Teams Dropdown and back into another nav item,
     //      dropdown is removed
-teams[1].onmouseover = function () {
+
+$('#teams-dropdown').mouseleave(function () {
     removeDropdown();
+})
+
+function removeTeamsDropdownOnEnter(id) {
+    $(id).mouseover(function () {
+        removeDropdown();
+    })
 }
 
-teamsDropdown.onmouseleave = function () {
-    removeDropdown();
-}
+removeTeamsDropdownOnEnter('#tickets');
+removeTeamsDropdownOnEnter('#patriots');
+removeTeamsDropdownOnEnter('#athletics');
+removeTeamsDropdownOnEnter('#fans');

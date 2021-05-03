@@ -6,21 +6,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<script src="https://kit.fontawesome.com/509311a0c9.js" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div>
 		<nav class="main-nav">
 			<ul>
-				<li class="main-nav__item">teams</li>
-				<li class="main-nav__item">tickets</li>
-				<li class="main-nav__item">patriot club</li>
-				<li class="main-nav__item">inside athletics</li>
-				<li class="main-nav__item">fan central</li>
+				<li class="main-nav__item" id="teams">teams</li>
+				<li class="main-nav__item" id="tickets">tickets</li>
+				<li class="main-nav__item" id="patriot">patriot club</li>
+				<li class="main-nav__item" id="athletics">inside athletics</li>
+				<li class="main-nav__item" id="fans">fan central</li>
 				<li class="mobile-nav-icon">
-					<i class="fas fa-bars"></i>
-					<i class="fas fa-times"></i>
+					<span class="fas fa-bars"></span>
+					<span class="fas fa-times"></span>
 				</li>
 			</ul>
 		</nav>
@@ -28,8 +27,8 @@
 			<ul class="mobile-nav">
 				<li class="mobile-nav__item">
 					<span>teams</span> 
-					<i class="fas fa-chevron-up"></i>
-					<i class="fas fa-chevron-down"></i>
+					<span class="fas fa-chevron-up"></span>
+					<span class="fas fa-chevron-down"></span>
 				</li>
 				<div class="mobile-nav__teams">
 					<li class="mobile-nav__teams__subitem mobile-nav__teams__subitem--head">Men's Sports</li>
@@ -47,7 +46,7 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="teams-dropdown">
+	<div class="teams-dropdown" id="teams-dropdown">
 		<div class="mens-sports teams-dropdown__item">
 			<ul>
 				<li><h2>Men's Sports</h2></li>
@@ -66,6 +65,7 @@
 	</div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="menu.js"></script>
 <script src="mobile-menu.js"></script>
 </html>
